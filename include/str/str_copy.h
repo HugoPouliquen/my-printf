@@ -9,13 +9,5 @@
  *
  *******************************************************************************/
 
-int my_put_nbr(int nbr);
-int my_strlen(char str[]);
-char my_puts_char(char *str);
-char my_strcapitalize(char str[]);
-char my_puts(char str[]);
-char my_strcat(char *src, char *dest);
-char my_strncat(char *src, char *dest, int n);
 char my_strcpy(char *src, char *dest);
 char my_strncpy(char *src, char *dest, int n);
-char *my_strcmp(char *src1, char *src2);

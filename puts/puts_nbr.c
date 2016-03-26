@@ -10,22 +10,6 @@
 *******************************************************************************/
 
 /*
-** Function to display one character
-** Param: string
-*/
-char my_puts_char(char *str){
-    write(1, str, 1);
-}
-
-/*
-** Function to display string
-** Param: string
-*/
-char my_puts(char str[]){
-    write(1,str,my_strlen(str));
-}
-
-/*
 **Function to display a number
 ** Param: number
 */
