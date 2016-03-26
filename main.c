@@ -9,8 +9,14 @@
  *
  *******************************************************************************/
 #include "include/my_printf.h"
+#include <stdio.h>
 
 int main(void){
-    my_printf("Hello");
+    char *str = "astek";
+
+    printf("##### Tests simple : 1 point par test reussi #####\n");
+    printf(   "0) Modulo [%%] : {%%}\n");
+    my_printf(str);
+
     return 0;
 }
