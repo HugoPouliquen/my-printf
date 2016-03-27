@@ -9,5 +9,7 @@
  *
  *******************************************************************************/
 
-char my_puts(char str[]);
-char my_puts_char(char *str);
+void my_puts_char(char c);
+void my_puts(char *str);
+void my_puts_ptr(char *str);
+void my_puts_extand(char *str);
