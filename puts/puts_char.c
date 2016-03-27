@@ -31,3 +31,24 @@ void my_puts_ptr(int ptr){
     my_puts("0x");
     my_puts_hexa(ptr);
 }
+
+void my_puts_extand(char *str){
+    while (*str){
+        if (*str < 32 || *str >= 127){
+            if (*str < 7){
+                my_puts("\\00");
+            }
+            else if (*str > 7 && *str < 32){
+                my_puts("\\0");
+            }
+            else if (*str >= 127){
+                my_puts("\\");
+            }
+            my_puts_octal(*str);
+        }
+        else{
+            my_puts_char(*str);
+        }
+        str++;
+    }
+}
