@@ -9,4 +9,8 @@
  *
  *******************************************************************************/
 
- int my_put_nbr(int nbr);
+void my_puts_nbr(int nbr);
+void my_puts_hexa(int nbr);
+void my_puts_hexa_maj(int nbr);
+void my_puts_octal(int nbr);
+void my_puts_binary(int nbr);

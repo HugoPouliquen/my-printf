@@ -10,18 +10,24 @@
 *******************************************************************************/
 #include <unistd.h>
 #include "../include/str/str_len.h"
+#include "../include/puts/puts_nbr.h"
 /*
 ** Function to display one character
 ** Param: string
 */
-char my_puts_char(char *str){
-    return write(1, str, 1);
+void my_puts_char(char c){
+    write(1, &c, 1);
 }
 
 /*
 ** Function to display string
 ** Param: string
 */
-char my_puts(char str[]){
-    return write(1,str,my_strlen(str));
+void my_puts(char *str){
+    write(1,str,my_strlen(str));
+}
+
+void my_puts_ptr(int ptr){
+    my_puts("0x");
+    my_puts_hexa(ptr);
 }
