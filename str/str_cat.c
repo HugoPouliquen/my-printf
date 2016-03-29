@@ -14,8 +14,8 @@
  */
 char my_strcat(char *src, char *dest){
 	int i, j=0;
-	char *dest_final = "";
-
+	char *dest_final;
+	dest_final = "";
 	dest_final = malloc(my_strlen(dest) + my_strlen(src));
 
 	for(i=0;dest[i];i++)
@@ -27,8 +27,7 @@ char my_strcat(char *src, char *dest){
 		j++;
 	}
     dest_final[j+1]= '\0';
-	my_puts(dest_final);
-	free(dest_final);
+	return dest_final;
 }
 
 /*
