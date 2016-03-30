@@ -4,13 +4,12 @@
  * Created By       : Hugo POULIQUEN
  * Creation Date    : 03 13th, 2016
  * Last Changed By  : Hugo POULIQUEN
- * Last Change      : 03 13th, 2016
- * Purpose          : Description
+ * Last Change      : 03 30th, 2016	
  *
  *******************************************************************************/
  /*
  ** Function to concat src & dest in dest
- ** Param: string, string
+ ** Param: strings
  */
 char my_strcat(char *src, char *dest){
 	int i, j=0;
@@ -32,7 +31,7 @@ char my_strcat(char *src, char *dest){
 
 /*
 ** Function to concat src & dest in dest with n size
-** Param: string, string, int
+** Param: strings, int
 */
 char my_strncat(char *src, char *dest, int n){
 	int i, j=0;

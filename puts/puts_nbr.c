@@ -1,19 +1,19 @@
 /******************************************************************************
 *
-* File Name        : puts.c
+* File Name        : puts_nbr.c
 * Created By       : Hugo POULIQUEN
 * Creation Date    : 03 13th, 2016
 * Last Changed By  : Hugo POULIQUEN
-* Last Change      : 03 13th, 2016
-* Purpose          : Description
+* Last Change      : 03 30th, 2016	
 *
 *******************************************************************************/
 #include <math.h>
 #include <unistd.h>
 #include "../include/str/str_len.h"
 #include "../include/puts/puts_char.h"
+
 /*
-**Function to display a number
+** Function to display a number
 ** Param: number
 */
 void my_puts_nbr(int nbr){
@@ -39,6 +39,10 @@ void my_puts_nbr(int nbr){
     }
 }
 
+/*
+**Function to display hexa number with lowercase
+** Param: number
+*/
 void my_puts_hexa(int nbr){
     unsigned int divisor, size, res;
     char *base;
@@ -57,6 +61,10 @@ void my_puts_hexa(int nbr){
     }
 }
 
+/*
+** Function to display hexa number with uppercase
+** Param: number
+*/
 void my_puts_hexa_maj(int nbr){
     unsigned int divisor, size, res;
     char *base;
@@ -75,6 +83,10 @@ void my_puts_hexa_maj(int nbr){
     }
 }
 
+/*
+** Function to display octal
+** Param: number
+*/
 void my_puts_octal(int nbr){
     unsigned int divisor, size, res;
     char *base;
@@ -93,6 +105,10 @@ void my_puts_octal(int nbr){
     }
 }
 
+/*
+** Function to display binary number
+** Param: number
+*/
 void my_puts_binary(int nbr){
     unsigned int divisor, size, res;
     char *base;

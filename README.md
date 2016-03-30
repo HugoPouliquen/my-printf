@@ -8,9 +8,10 @@ Rewriting printf with few new flags
 
 ## Todo
 - [x] Build architecture
-- [ ] All functions for printf
+- [x] All functions for printf
 - [x] Printf flags system
-- [ ] Callback
+- [x] Callback
+- [ ] Format
 - [ ] Recursivity
 - [ ] Packages
 - [ ] Tests ([Criterion](https://github.com/Snaipe/Criterion),

@@ -4,8 +4,8 @@
  * Created By       : Hugo POULIQUEN
  * Creation Date    : 03 13th, 2016
  * Last Changed By  : Hugo POULIQUEN
- * Last Change      : 03 13th, 2016
- * Purpose          : Description
+ * Last Change      : 03 30th, 2016
+ * Purpose          : Printf test file
  *
  *******************************************************************************/
 #include "include/my_printf.h"
@@ -103,7 +103,7 @@ int main(void){
     my_printf("=>  Formatage ultracompose [#15.12b] : {%#15.12b}\n", 1564545);
     /*printf(   "18) Formatage ultracompose [#-6.3d] : {%#-6.3d}\n", -2147483648);*/
     my_printf("=>  Formatage ultracompose [#-6.3d] : {%#-6.3d}\n", -2147483648);
-    printf(   "19) Formatage long [p x lx] : {%p} {%x} {%lx}\n", 0x42424242, 0x42424242, 0x42424242);
+    /*printf(   "19) Formatage long [p x lx] : {%p} {%x} {%lx}\n", 0x42424242, 0x42424242, 0x42424242);*/
     my_printf("=>  Formatage long [p x lx] : {%p} {%x} {%lx}\n", 0x42424242, 0x42424242, 0x42424242);
     /*printf(   "20) Formatage pourcent [30%%] : {%30%}\n");*/
     my_printf("=>  Formatage pourcent [30%%] : {%30%}\n");

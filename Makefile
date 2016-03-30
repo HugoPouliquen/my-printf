@@ -3,7 +3,7 @@
 # Created By      : Hugo POULIQUEN                                             #
 # Creation Date   : 03 13th, 2016							                   #
 # Last Changed By : Firstname Name                                             #
-# Last Changed    : 03 13th, 2016											   #
+# Last Changed    : 03 30th, 2016											   #
 # Purpose         : Provides compilation automation to the project             #
 #                  - all   : Compile all source presents in the directory      #
 #                  - clean : Clean all objects and executable presents in the  #

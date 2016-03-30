@@ -4,8 +4,7 @@
  * Created By       : Hugo POULIQUEN
  * Creation Date    : 03 13th, 2016
  * Last Changed By  : Hugo POULIQUEN
- * Last Change      : 03 13th, 2016
- * Purpose          : Description
+ * Last Change      : 03 30th, 2016
  *
  *******************************************************************************/
 #include "include/puts/puts_char.h"
@@ -27,6 +26,10 @@ struct flag{
     int str_list;
 };
 
+/*
+** Function to search function index in array
+** Param: char for search
+*/
 struct flag search_index_flags(char search){
     struct flag result;
     char *flags_str, *flags_int;
@@ -62,6 +65,10 @@ struct flag search_index_flags(char search){
     }
 }*/
 
+/*
+** Function to select the correct function
+** Param: number, struct, struct
+*/
 va_list va;
 void select_function(int format, va_list va,  struct flag result){
     if(format == '%')
@@ -76,6 +83,10 @@ void select_function(int format, va_list va,  struct flag result){
         my_puts_char(format);
 }
 
+/*
+** Function to add padding
+** Param: number
+*/
 int padding(int search){
     char *flags_nbr;
     int padding_ok, flags_nbr_size;
