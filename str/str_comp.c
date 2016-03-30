@@ -4,8 +4,7 @@
 * Created By       : Hugo POULIQUEN
 * Creation Date    : 03 13th, 2016
 * Last Changed By  : Hugo POULIQUEN
-* Last Change      : 03 13th, 2016
-* Purpose          : Description
+* Last Change      : 03 30th, 2016	
 *
 *******************************************************************************/
 typedef int bool;
@@ -20,7 +19,6 @@ char *my_strcmp(char *src1, char *src2){
     int i, j=0;
     bool equal=0;
     char *res="";
-    //Doit comparer si la chaine 1 est sup à la chaine 2
     for(i=0;src1[i];i++){
         if(src1[i] == src2[i] && equal != 0)
         equal = 1;

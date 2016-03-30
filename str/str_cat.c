@@ -4,18 +4,17 @@
  * Created By       : Hugo POULIQUEN
  * Creation Date    : 03 13th, 2016
  * Last Changed By  : Hugo POULIQUEN
- * Last Change      : 03 13th, 2016
- * Purpose          : Description
+ * Last Change      : 03 30th, 2016	
  *
  *******************************************************************************/
  /*
  ** Function to concat src & dest in dest
- ** Param: string, string
+ ** Param: strings
  */
 char my_strcat(char *src, char *dest){
 	int i, j=0;
-	char *dest_final = "";
-
+	char *dest_final;
+	dest_final = "";
 	dest_final = malloc(my_strlen(dest) + my_strlen(src));
 
 	for(i=0;dest[i];i++)
@@ -27,13 +26,12 @@ char my_strcat(char *src, char *dest){
 		j++;
 	}
     dest_final[j+1]= '\0';
-	my_puts(dest_final);
-	free(dest_final);
+	return dest_final;
 }
 
 /*
 ** Function to concat src & dest in dest with n size
-** Param: string, string, int
+** Param: strings, int
 */
 char my_strncat(char *src, char *dest, int n){
 	int i, j=0;
